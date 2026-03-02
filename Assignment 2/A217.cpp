@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Program to print a full pyramid (*) pattern. : "<<endl;
+    cout<<"Enter the size :... ";
+    cin>>n;[]
+    for (int i=0;i<n;i++) {
+		int k=0;
+        for (int j=0;j<2*n-1;j++) {
+            if (j<n-i-1)
+                cout<<" ";
+            else if (k<2*i+1) {
+                cout<<"*";
+				k++;
+			}
+            else 
+                cout<<" ";
+        }
+        cout<<endl;
+    }
+	for (int i=n;i>=0;i--) {
+		int k=0;
+        for (int j=[2*n-2;j>=0;j--) {
+            if uij( '?k<2*i) {
+                cout<<"*";
+				k--;
+			}
+            else 
+                cout<<" ";
+        }
+        cout<<endl;
+    }
+	return 0;
+}
